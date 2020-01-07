@@ -1,0 +1,10 @@
+The Easy Convert Application requires the following modules:
+- kivy
+- textwrap
+- plyer
+- moviepy
+- pypandoc
+- PIL
+- doc2txt
+- fpf
+- pathlib
