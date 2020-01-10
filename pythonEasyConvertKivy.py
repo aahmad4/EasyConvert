@@ -328,7 +328,7 @@ class ChooserApp(App):
 
                 canvas:
                     Color: 
-                        rgb: (9/255, 34/255, 52/255, 1)
+                        rgb: (49/255, 51/255, 53/255, 1)
                     Rectangle:
                         pos: self.pos
                         size: self.size
@@ -433,42 +433,42 @@ class ChooserApp(App):
                                 
 
                             FileChoose:
-                                background_color: (78/255, 38/255, 120/255, 1)
+                                background_color: (242/255, 68/255, 63/255, 1)
                                 color: 0, 0, 0 , 1
                                 on_release: self.choose()
                                 text: 'Gif to Mp4'
                                
 
                             FileChoose:
-                                background_color: (78/255, 38/255, 120/255, 1)
+                                background_color: (242/255, 68/255, 63/255, 1)
                                 color: 0, 0, 0 , 1
                                 on_release: self.choose()
                                 text: 'Mp4 to Gif'
                                
 
                             FileChoose:
-                                background_color: (99/255, 42/255, 84/255, 1)
+                                background_color: (242/255, 68/255, 63/255, 1)
                                 color: 0, 0, 0 , 1
                                 on_release: self.choose()
                                 text: 'Mp3 to Wav'
 
 
                             FileChoose:
-                                background_color: (99/255, 42/255, 84/255, 1)
+                                background_color: (242/255, 68/255, 63/255, 1)
                                 color: 0, 0, 0 , 1
                                 on_release: self.choose()
                                 text: 'Wav to Mp3'
                               
 
                             FileChoose:
-                                background_color: (99/255, 42/255, 84/255, 1)
+                                background_color: (242/255, 68/255, 63/255, 1)
                                 color: 0, 0, 0 , 1
                                 on_release: self.choose()
                                 text: 'Mp4 to Wav'
                                 
 
                             FileChoose:
-                                background_color: (99/255, 42/255, 84/255, 1)
+                                background_color: (242/255, 68/255, 63/255, 1)
                                 color: 0, 0, 0 , 1
                                 on_release: self.choose()
                                 text: 'Mp4 to Mp3'
