@@ -314,7 +314,6 @@ class ChooserApp(App):
                 background_down: 'down.png'
                 border: 30,30,30,30
                 size_hint_y: None
-                height: 120
                 
             GridLayout:
                 cols: 1
@@ -353,6 +352,7 @@ class ChooserApp(App):
                         size_hint_y: None
                         background_color: 0, 0, 0, 0
                         on_press: self.openLink()
+                        height: 120
                         Image:
                             source: "transparent_q.png"
                             center_x: self.parent.center_x
@@ -365,8 +365,8 @@ class ChooserApp(App):
                         height: self.minimum_height
                         row_default_height: 60
                         cols: 1
-                        spacing: 10  
-                        padding: 10
+                        spacing: 30
+                        padding: 30
 
                         Label:
                             text: '~~~~~~ Standard Options ~~~~~~'
@@ -379,8 +379,6 @@ class ChooserApp(App):
                             background_normal: 'normal.png'
                             background_down: 'down.png'
                             border: 30,30,30,30
-                            size_hint_y: None
-                            height: 120
                             on_release: self.choose()
                             text: 'JPEG to PNG'
                         
