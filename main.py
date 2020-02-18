@@ -24,17 +24,27 @@ from plyer import notification
 from pathlib import Path
 import webbrowser
 from kivy.uix.screenmanager import ScreenManager, Screen 
+from kivy.uix.popup import Popup
 
 
+class P(FloatLayout):
+    # Opens specified link when button is pressed.
+    def openLink(instnace):
+        webbrowser.open('https://www.youtube.com')
 
 class MainWindow(Screen):
+
     class FileChoose(Button):
   
         selection = ListProperty([])
 
-        # Opens specified link when button is pressed.
-        def openLink(instnace):
-            webbrowser.open('https://www.youtube.com')
+        def ThePopup(self):
+            def show_popup_P():
+                show = P()
+
+                popupWindow = Popup(title="Help Screen", content=show, size_hint=(None, None),size=(400,400))
+                popupWindow.open()
+            show_popup_P()
 
         def choose(self):
             '''
@@ -1375,6 +1385,24 @@ class ChooserApp(App):
                 FourthWindow:
                     name: "fourth"
 
+            <P>:
+                Label: 
+                    text: "EasyConvert - Help Window"
+                    size_hint: 0.6, 0.2
+                    pos_hint: {"x":0.2, "top":1}
+                TextInput:
+                    font_size: 15
+                    size_hint: 0.9, 0.5
+                    pos_hint: {"x": 0.05, "y":0.32}
+                    multiline: True
+                    disabled: True
+                    text: "To use our app select what file conversion you would like. There, you will be redirected to a file dialog. Select your current file and upon selection your conversion will have begun. You will receive a notification when complete. Additional questions? View our tutorial video down below. To exit the help screen, click anywhere outside the window."
+                Button:
+                    text: "Tutorial"
+                    size_hint: .8, .2
+                    pos_hint: {"x": .1, "y": .05}
+                    on_press: root.openLink()
+
             <MainWindow>:
                 name: "main"
 
@@ -1416,7 +1444,7 @@ class ChooserApp(App):
                             size_hint_y: None
                             background_color: 0, 0, 0, 0
                             height: 120
-                            on_press: self.openLink()
+                            on_release: self.ThePopup()
                             Image:
                                 source: "transparent_q.png"
                                 center_x: self.parent.center_x
