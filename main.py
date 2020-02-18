@@ -1397,13 +1397,13 @@ class ChooserApp(App):
                         spacing: 0
                         padding: 0
 
-                        canvas:
-                            Color: 
-                                rgb: .26, .26, .26, 1
+                        canvas.before:
                             Rectangle:
                                 pos: self.pos
                                 size: self.size
+                                source: 'ez.png'
                         Label:
+                            color: 0, 0, 0, 1
                             text:"EasyConvert"
                             size_hint: .1, .07
                             font_size: 60
@@ -1424,88 +1424,78 @@ class ChooserApp(App):
 
                     GridLayout:
                         orientation: 'horizontal'
-                        size_hint_y: None
-                        height: self.minimum_height
-                        row_default_height: 60
                         cols: 2
-                        spacing: 20
-                        padding: 20
+                        spacing: 50
+                        padding: 50
 
-                        GridLayout:
-                            orientation: 'vertical'
+                        canvas.before:
+                            Rectangle:
+                                pos: self.pos
+                                size: self.size
+                                source: "bg.png"
+
+
+                        Button:
+                            color: 0, 0, 0, 1
+                            text: 'Video'
+                            font_size: 60
+                            background_color: .5, .5, 1, 1
+                            background_normal: 'normal.png'
+                            background_down: 'down.png'
+                            border: 30,30,30,30
                             size_hint_y: None
-                            height: self.minimum_height
-                            row_default_height: 60
-                            cols: 1
-                            spacing: 20
-                            padding: 20
+                            height: 150
+                            on_release: 
+                                app.root.current = "first"
+                                root.manager.transition.direction = "left"
 
 
-                            Button:
-                                color: 0, 0, 0, 1
-                                text: 'Video'
-                                font_size: 60
-                                background_color: .5, .5, 1, 1
-                                background_normal: 'normal.png'
-                                background_down: 'down.png'
-                                border: 30,30,30,30
-                                size_hint_y: None
-                                height: 200
-                                on_release: 
-                                    app.root.current = "first"
-                                    root.manager.transition.direction = "left"
 
-
-                            Button:
-                                color: 0, 0, 0, 1
-                                text: 'Text'
-                                font_size: 60
-                                background_color: .5, .5, 1, 1
-                                background_normal: 'normal.png'
-                                background_down: 'down.png'
-                                border: 30,30,30,30
-                                size_hint_y: None
-                                height: 200
-                                on_release: 
-                                    app.root.current = "second"
-                                    root.manager.transition.direction = "left"
-
-                        GridLayout:
-                            orientation: 'vertical'
+                        Button:
+                            color: 0, 0, 0, 1
+                            text: 'Text'
+                            font_size: 60
+                            background_color: .5, .5, 1, 1
+                            background_normal: 'normal.png'
+                            background_down: 'down.png'
+                            border: 30,30,30,30
                             size_hint_y: None
-                            height: self.minimum_height
-                            row_default_height: 60
-                            cols: 1
-                            spacing:20
-                            padding:20
+                            height: 150
+                            on_release: 
+                                app.root.current = "second"
+                                root.manager.transition.direction = "left"
 
-                            Button:
-                                color: 0, 0, 0, 1
-                                text: 'Developer'
-                                font_size: 60
-                                background_color: .5, .5, 1, 1
-                                background_normal: 'normal.png'
-                                background_down: 'down.png'
-                                border: 30,30,30,30
-                                size_hint_y: None
-                                height: 200
-                                on_release: 
-                                    app.root.current = "third"
-                                    root.manager.transition.direction = "left"
+                   
 
-                            Button:
-                                color: 0, 0, 0, 1
-                                text: 'Images'
-                                font_size: 60
-                                background_color: .5, .5, 1, 1
-                                background_normal: 'normal.png'
-                                background_down: 'down.png'
-                                border: 30,30,30,30
-                                size_hint_y: None
-                                height: 200
-                                on_release: 
-                                    app.root.current = "fourth"
-                                    root.manager.transition.direction = "left"
+                        Button:
+                            color: 0, 0, 0, 1
+                            text: 'Developer'
+                            font_size: 60
+                            background_color: .5, .5, 1, 1
+                            background_normal: 'normal.png'
+                            background_down: 'down.png'
+                            border: 30,30,30,30
+                            size_hint_y: None
+                            height: 150
+                            on_release: 
+                                app.root.current = "third"
+                                root.manager.transition.direction = "left"
+
+                        
+                        Button:
+                            color: 0, 0, 0, 1
+                            text: 'Images'
+                            font_size: 60
+                            background_color: .5, .5, 1, 1
+                            background_normal: 'normal.png'
+                            background_down: 'down.png'
+                            border: 30,30,30,30
+                            size_hint_y: None
+                            height: 150
+                            on_release: 
+                                app.root.current = "fourth"
+                                root.manager.transition.direction = "left"
+
 
             <FirstWindow>:
                 orientation: 'horizontal'
@@ -1515,12 +1505,11 @@ class ChooserApp(App):
                     spacing: 20
                     orientation: 'horizontal'
 
-                    canvas:
-                        Color: 
-                            rgb: (1, 1, 1, 1)
+                    canvas.before:
                         Rectangle:
                             pos: self.pos
                             size: self.size
+                            source: "bg.png"
                 
                     GridLayout:
                         orientation: 'horizontal'
@@ -1531,19 +1520,19 @@ class ChooserApp(App):
                         spacing: 0
                         padding: 0
 
-                        canvas:
-                            Color: 
-                                rgb: .26, .26, .26, 1
+                        canvas.before:
                             Rectangle:
                                 pos: self.pos
                                 size: self.size
+                                source: 'ez.png'
                         Label:
+                            color: 0, 0, 0, 1
                             text:"EasyConvert"
                             size_hint: .1, .07
                             font_size: 60
                             pos_hint: {"x": .1, "top": .9}
                     
-                        Button:
+                        FileChoose:
                             text: ''
                             size_hint_x: None
                             width: 200
@@ -1568,9 +1557,15 @@ class ChooserApp(App):
                             spacing: 20 
                             padding: 20
 
+                            canvas:
+                                Color:
+                                    rgba: 0, 0, 0, 0
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1582,7 +1577,6 @@ class ChooserApp(App):
                                
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1594,7 +1588,6 @@ class ChooserApp(App):
                                
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1605,7 +1598,6 @@ class ChooserApp(App):
                                 text: 'Mp3 to Wav'
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1617,7 +1609,6 @@ class ChooserApp(App):
                               
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1629,7 +1620,6 @@ class ChooserApp(App):
                                 
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1648,12 +1638,11 @@ class ChooserApp(App):
                     spacing: 20
                     orientation: 'horizontal'
 
-                    canvas:
-                        Color: 
-                            rgb: (1, 1, 1, 1)
+                    canvas.before:
                         Rectangle:
                             pos: self.pos
                             size: self.size
+                            source: "bg.png"
                 
                     GridLayout:
                         orientation: 'horizontal'
@@ -1664,19 +1653,19 @@ class ChooserApp(App):
                         spacing: 0
                         padding: 0
 
-                        canvas:
-                            Color: 
-                                rgb: .26, .26, .26, 1
+                        canvas.before:
                             Rectangle:
                                 pos: self.pos
                                 size: self.size
+                                source: 'ez.png'
                         Label:
+                            color: 0, 0, 0, 1
                             text:"EasyConvert"
                             size_hint: .1, .07
                             font_size: 60
                             pos_hint: {"x": .1, "top": .9}
                     
-                        Button:
+                        FileChoose:
                             text: ''
                             size_hint_x: None
                             width: 200
@@ -1701,9 +1690,15 @@ class ChooserApp(App):
                             spacing: 20 
                             padding: 20
 
+                            canvas:
+                                Color:
+                                    rgba: 0, 0, 0, 0
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1715,7 +1710,6 @@ class ChooserApp(App):
 
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1735,12 +1729,11 @@ class ChooserApp(App):
                     spacing: 20
                     orientation: 'horizontal'
 
-                    canvas:
-                        Color: 
-                            rgb: (1, 1, 1, 1)
+                    canvas.before:
                         Rectangle:
                             pos: self.pos
                             size: self.size
+                            source: "bg.png"
                 
                     GridLayout:
                         orientation: 'horizontal'
@@ -1751,19 +1744,19 @@ class ChooserApp(App):
                         spacing: 0
                         padding: 0
 
-                        canvas:
-                            Color: 
-                                rgb: .26, .26, .26, 1
+                        canvas.before:
                             Rectangle:
                                 pos: self.pos
                                 size: self.size
+                                source: 'ez.png'
                         Label:
+                            color: 0, 0, 0, 1
                             text:"EasyConvert"
                             size_hint: .1, .07
                             font_size: 60
                             pos_hint: {"x": .1, "top": .9}
                     
-                        Button:
+                        FileChoose:
                             text: ''
                             size_hint_x: None
                             width: 200
@@ -1788,6 +1781,13 @@ class ChooserApp(App):
                             spacing: 20 
                             padding: 20
 
+                            canvas:
+                                Color:
+                                    rgba: 0, 0, 0, 0
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
                             FileChoose:
                                 color: 0, 0, 0, 1
                                 font_size: 45
@@ -1801,8 +1801,8 @@ class ChooserApp(App):
                                 text: 'Md to Docx'
                          
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1813,8 +1813,8 @@ class ChooserApp(App):
                                 text: 'Docx to Md'
                               
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1825,8 +1825,8 @@ class ChooserApp(App):
                                 text: 'Md to Epub'
                                
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1837,8 +1837,8 @@ class ChooserApp(App):
                                 text: 'Epub to Md'
                                
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1849,8 +1849,8 @@ class ChooserApp(App):
                                 text: 'HTML to Docx'
                                
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1861,8 +1861,8 @@ class ChooserApp(App):
                                 text: 'Docx to Epub'
                                 
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1873,8 +1873,8 @@ class ChooserApp(App):
                                 text: 'Epub to Docx'
                                
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1885,8 +1885,8 @@ class ChooserApp(App):
                                 text: 'Docx to HTML'
                               
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1897,8 +1897,8 @@ class ChooserApp(App):
                                 text: 'Md to HTML'
                                
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1909,8 +1909,8 @@ class ChooserApp(App):
                                 text: 'Epub to HTML'
                               
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1921,8 +1921,8 @@ class ChooserApp(App):
                                 text: 'Epub to Txt'
                             
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1933,8 +1933,8 @@ class ChooserApp(App):
                                 text: 'HTML to Txt'
                             
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1945,8 +1945,8 @@ class ChooserApp(App):
                                 text: 'Md to Txt'
                                
                             FileChoose:
-                                background_color: .1, .5, .1, 1
                                 color: 0, 0, 0, 1
+                                background_color: .1, .5, .1, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -1968,12 +1968,11 @@ class ChooserApp(App):
                     spacing: 20
                     orientation: 'horizontal'
 
-                    canvas:
-                        Color: 
-                            rgb: (1, 1, 1, 1)
+                    canvas.before:
                         Rectangle:
                             pos: self.pos
                             size: self.size
+                            source: "bg.png"
                 
                     GridLayout:
                         orientation: 'horizontal'
@@ -1984,19 +1983,19 @@ class ChooserApp(App):
                         spacing: 0
                         padding: 0
 
-                        canvas:
-                            Color: 
-                                rgb: .26, .26, .26, 1
+                        canvas.before:
                             Rectangle:
                                 pos: self.pos
                                 size: self.size
+                                source: 'ez.png'
                         Label:
+                            color: 0, 0, 0, 1
                             text:"EasyConvert"
                             size_hint: .1, .07
                             font_size: 60
                             pos_hint: {"x": .1, "top": .9}
                     
-                        Button:
+                        FileChoose:
                             text: ''
                             size_hint_x: None
                             width: 200
@@ -2021,9 +2020,15 @@ class ChooserApp(App):
                             spacing: 20 
                             padding: 20
 
+                            canvas:
+                                Color:
+                                    rgba: 0, 0, 0, 0
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -2036,7 +2041,6 @@ class ChooserApp(App):
                               
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -2048,7 +2052,6 @@ class ChooserApp(App):
                                 
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -2060,7 +2063,6 @@ class ChooserApp(App):
                                
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -2072,7 +2074,6 @@ class ChooserApp(App):
                               
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
@@ -2084,7 +2085,6 @@ class ChooserApp(App):
                             
                             FileChoose:
                                 background_color: .5, .5, 1, 1
-                                color: 0, 0, 0, 1
                                 font_size: 45
                                 background_normal: 'normal.png'
                                 background_down: 'down.png'
