@@ -1,15 +1,33 @@
-# Easy-Convert-Application
+# EasyConvert 
 
-This repository contains the work of an android application, Easy Convert. My app's purpose is to provide a more convenient alternative to standard cloud version file converting and web-based conversions. My app is an easy to use, unique, and local means of converting datatypes. The app was built with kivy and python. 
+This repository contains the work of a Multiplatform Application, Easy Convert. My app's purpose is to provide a more convenient alternative to standard cloud version file converting and web-based conversions. My app is an easy to use, unique, and local means of converting datatypes. The app was built with Kivy and Python. A demo of my the app can be seen on my YouTube [here](https://www.youtube.com/watch?v=XZYGNK6uewo).
 
-# Screenshot Of The App
+## Screenshot
 
 ![](screenshot1.png)
 
-# How To Use The App
+## Clone
+```bash
+git clone https://github.com/aahmad4/Easy-Convert-Application
+```
 
-To use the app simply select one of the buttons based on what file you currently have and what filetype you want it to become. Upon selection you will be prompted to your file dialog box on your respective device. Choose your current file and within seconds you will be prompted with a notification that your newly converted file is ready. The conversions are simultaneous as well as efficient. 
+## Installation
 
-# Demo
-A demo of the full app can be seen on my YouTube channel: https://www.youtube.com/watch?v=XZYGNK6uewo
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required packages.
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+```
+python main.py
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+
 
