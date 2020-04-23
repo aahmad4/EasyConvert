@@ -1,6 +1,8 @@
 # EasyConvert 
 
-This repository contains the work of a Multiplatform Application, Easy Convert. My app's purpose is to provide a more convenient alternative to standard cloud version file converting and web-based conversions. My app is an easy to use, unique, and local means of converting datatypes. The app was built with Kivy and Python. A demo of my the app can be seen on my YouTube [here](https://www.youtube.com/watch?v=XZYGNK6uewo).
+This repository contains the work of a Multiplatform Application, Easy Convert. My app's purpose is to provide a more convenient alternative to standard cloud version file converting and web-based conversions. My app is an easy to use, unique, and local means of converting datatypes. The app was built with Kivy and Python. A demo of my the app can be seen on my YouTube [here](https://www.youtube.com/watch?v=XZYGNK6uewo) or below.
+
+https://www.youtube.com/watch?v=XZYGNK6uewo
 
 ## Screenshot
 
