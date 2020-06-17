@@ -8,6 +8,19 @@ https://www.youtube.com/watch?v=XZYGNK6uewo
 
 ![](screenshot1.png)
 
+## Built With
+
+* [Python 3.7.7](https://www.python.org/)
+   * [Kivy](https://kivy.org/)
+   * [Plyer API](https://pypi.org/project/plyer/)
+   * [MoviePy](https://pypi.org/project/moviepy/)
+   * [Pypandoc](https://pypi.org/project/pypandoc/)
+   * [Pillow](https://python-pillow.org/)
+   * [Docx2Txt](https://pypi.org/project/docx2txt/)
+   * [FPDF](https://pyfpdf.readthedocs.io/)
+   * [Pathlib](https://docs.python.org/3/library/pathlib.html)
+
+
 ## Clone
 ```bash
 git clone https://github.com/aahmad4/Easy-Convert-Application
