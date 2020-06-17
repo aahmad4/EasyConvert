@@ -1,4 +1,3 @@
-The Easy Convert Application requires the following modules:
 Cython==0.29.14
 docutils==0.14
 docx==0.2.4
