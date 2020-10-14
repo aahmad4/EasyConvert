@@ -1,8 +1,12 @@
-# EasyConvert 
+<h1 align="center">EasyConvert</h1> 
 
-This repository contains the work of a Multiplatform Application, Easy Convert. The purpose of EasyConvert is to provide a more convenient and local alternative to standard cloud version file converting and web-based conversions. The app is an easy to use, unique, and local means of converting datatypes. The app was built with Kivy and Python. EasyConvert was developed for the Lenovo Ready Set App Competition with my group members Shiva (GH: shivaganapathy), Nico (GH: nico-jimene), and Aakash (GH: aakosk). I was the developer of the group so I was responsible for designing and coding all of the apps interface as well as all of the apps functionality. A demo of the app can be seen on my YouTube [here](https://www.youtube.com/watch?v=XZYGNK6uewo) or below.
+<p align="center">
+This repository contains the work of a Multiplatform Application, Easy Convert. The purpose of EasyConvert is to provide a more convenient and local alternative to standard cloud version file converting and web-based conversions. The app is an easy to use, unique, and local means of converting datatypes. The app was built with Kivy and Python. EasyConvert was developed for the Lenovo Ready Set App Competition with my group members Shiva (GH: shivaganapathy), Nico (GH: nico-jimene), and Aakash (GH: aakosk). I was the developer of the group so I was responsible for designing and coding all of the apps interface as well as all of the apps functionality.
+</p>
 
-https://www.youtube.com/watch?v=XZYGNK6uewo
+<p align="center">
+A link to an online demo version can be found here: <a href="https://www.youtube.com/watch?v=XZYGNK6uewo" target="_blank">youtube.com/watch?v=XZYGNK6uewo</a>
+</p>
 
 ## Screenshot
 
@@ -20,20 +24,24 @@ https://www.youtube.com/watch?v=XZYGNK6uewo
    * [FPDF](https://pyfpdf.readthedocs.io/)
    * [Pathlib](https://docs.python.org/3/library/pathlib.html)
 
+## Setup
 
-## Clone
+#### Clone
 ```bash
-git clone https://github.com/aahmad4/Easy-Convert-Application
+git clone https://github.com/aahmad4/EasyConvert
 ```
 
-## Installation
+#### Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required packages.
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
+#### Usage
+```
+cd EasyConvert
+```
 ```
 python main.py
 ```
