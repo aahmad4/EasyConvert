@@ -1,7 +1,7 @@
 <h1 align="center">EasyConvert</h1> 
 
 <p align="center">
-This repository contains the work of a Multiplatform Application, Easy Convert. The purpose of EasyConvert is to provide a more convenient and local alternative to standard cloud version file converting and web-based conversions. The app is an easy to use, unique, and local means of converting datatypes. The app was built with Kivy and Python. EasyConvert was developed for the Lenovo Ready Set App Competition with my group members Nico (GH: nico-jimene), and Aakash (GH: aakosk). I was the developer of the group so I was responsible for designing and coding all of the apps interface as well as all of the apps functionality.
+An application allowing end users to convert numerous file types. A collaboration with my group members Nico (GH: nico-jimene), Aakash (GH: aakosk), and Shiva (GH: shivaganapathy)
 </p>
 
 <p align="center">
